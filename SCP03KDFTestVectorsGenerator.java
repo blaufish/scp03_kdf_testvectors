@@ -29,7 +29,7 @@ import org.bouncycastle.crypto.generators.KDFCounterBytesGenerator;
 import org.bouncycastle.crypto.macs.CMac;
 import org.bouncycastle.crypto.params.KDFCounterParameters;
 
-public class test {
+public class SCP03KDFTestVectorsGenerator {
 	private static byte[] scp03_kdf(byte[] key, byte constant, byte[] context, int blocklen_bits) {
 		// 11 bytes
 		byte[] label = new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
